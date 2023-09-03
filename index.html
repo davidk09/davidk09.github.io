@@ -4,9 +4,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 </head>
 <body>
     <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">REFERENCES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>David's Projekte</h1>
+            <p>Website über Projekte der letzten Jahre</p>
+            <a href="" class="btn">Projekte</a>
+        </div>
     </section>
+
+<!-----Projects---->
+<section class="projects">
+
+    <h1>Projects</h1>
+    <p>Projects from Uni or Private Projects just for fun</p>
+
+
+</section>
+
+
+<!-----JavaScript for Toggling the Handy Menu---->
+
+    <script>
+        var navLinks =document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right="0";
+        }
+
+        function showMenu() {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
 </body>
 </html>
